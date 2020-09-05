@@ -29,6 +29,7 @@ def apply_clearance(cart)
       clearance_cart << item
     end
   end
+  binding.pry
   clearance_cart
 end
 
