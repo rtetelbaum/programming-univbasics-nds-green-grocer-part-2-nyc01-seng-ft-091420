@@ -1,8 +1,11 @@
 require_relative './part_1_solution.rb'
+require 'pry'
 
 def apply_coupons(cart, coupons)
   coupon_cart = []
-  
+  cart.each do |item|
+    binding.pry
+  end
   coupon_cart
 end
 
