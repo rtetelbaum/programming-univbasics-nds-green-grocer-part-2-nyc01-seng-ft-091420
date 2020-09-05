@@ -48,4 +48,5 @@ def checkout(cart, coupons)
   else
     grand_total = sub_total
   end
+  binding.pry
 end
