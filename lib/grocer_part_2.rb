@@ -6,7 +6,8 @@ def apply_coupons(cart, coupons)
   cart.each do |item|
     coupons.each do |coupon_item|
       if item[:item] == coupon_item[:item]
-        item[:count]  %% 
+        uncouponed = item[:count] % coupon_item[:num]
+        couponed = item[:count] - uncouponed
       end
     end
   end
