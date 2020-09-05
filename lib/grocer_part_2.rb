@@ -4,7 +4,9 @@ require 'pry'
 def apply_coupons(cart, coupons)
   coupon_cart = []
   cart.each do |item|
-    if item[:item]
+    coupons.each do |coupon_item|
+      binding.pry
+    end
   end
   coupon_cart
 end
