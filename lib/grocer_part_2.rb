@@ -35,11 +35,6 @@ end
 
 def checkout(cart, coupons)
   consolidated_cart = consolidate_cart(cart)
-  consolidated_cart.each do |item|
-    coupons.each do |coupon_items|
-     if 
-    end
-  end
   coupon_cart = apply_coupons(consolidated_cart, coupons)
   clearance_cart = apply_clearance(coupon_cart)
   sub_total = 0
