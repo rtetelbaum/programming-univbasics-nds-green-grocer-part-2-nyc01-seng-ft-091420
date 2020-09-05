@@ -34,5 +34,6 @@ def apply_clearance(cart)
 end
 
 def checkout(cart, coupons)
-  apply_clearance(consolidate_cart(cart))
+  checkout_cart = apply_clearance(consolidate_cart(cart))
+  binding.pry
 end
