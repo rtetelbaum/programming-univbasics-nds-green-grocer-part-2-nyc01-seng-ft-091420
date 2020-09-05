@@ -5,7 +5,9 @@ def apply_coupons(cart, coupons)
   coupon_cart = []
   cart.each do |item|
     coupons.each do |coupon_item|
-      binding.pry
+      if item[:item] == coupon_item[:item]
+        item[:count]  %% 
+      end
     end
   end
   coupon_cart
