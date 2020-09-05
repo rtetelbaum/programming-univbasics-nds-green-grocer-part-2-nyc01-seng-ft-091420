@@ -11,7 +11,7 @@ def apply_coupons(cart, coupons)
         item[:count] = uncouponed
         coupon_price_per = coupon_item[:cost] / coupon_item[:num]
         coupon_cart << item if item[:count] != 0
-        coupon_cart << {:item => "#{item[:item]} W/COUPON", :price => }
+        coupon_cart << {:item => "#{item[:item]} W/COUPON", :price => 1}
         binding.pry
       end
     end
