@@ -8,7 +8,9 @@ def apply_coupons(cart, coupons)
       if item[:item] == coupon_item[:item]
         uncouponed = item[:count] % coupon_item[:num]
         couponed = item[:count] - uncouponed
-        
+        item[:count] = uncouponed
+        coupon_cart << item
+        binding.pry
       end
     end
   end
